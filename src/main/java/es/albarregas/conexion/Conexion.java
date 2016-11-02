@@ -87,7 +87,6 @@ public class Conexion {
             String sql = "select * from aves;";
             try{                
                 conexion = ds.getConnection();
-                System.out.println("estamos aqui");
                 sentencia = conexion.createStatement();                
                 resultado = sentencia.executeQuery(sql);
                 
